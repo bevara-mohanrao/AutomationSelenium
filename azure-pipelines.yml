@@ -8,6 +8,7 @@ trigger:
 
 pool:
   name: logicpool
+  demands: SpecialSoftware
 
 steps:
 - task: Maven@3
