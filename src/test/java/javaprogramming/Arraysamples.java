@@ -25,16 +25,16 @@ Arrays.sort(Vowels);
 		System.out.println(Arrays.toString(Vowels));
 		
 		
-	/*	for(int i=0;i<numbers.length;i++)
+		for(int i=0;i<numbers.length;i++)
 		{
 			sum = sum+numbers[i];
 		//	System.out.println(numbers[i]);
 		}
 		System.out.println(sum);
-		*/
 		
 		
-		for(int tableval=1;tableval <=10;tableval++)
+		
+	/*	for(int tableval=1;tableval <=10;tableval++)
 				{
 		for(int multiply=1;multiply <= 20;multiply++)
 		{
@@ -43,7 +43,7 @@ Arrays.sort(Vowels);
 			
 		}
 		
-				}
+				} */
 		
     
 

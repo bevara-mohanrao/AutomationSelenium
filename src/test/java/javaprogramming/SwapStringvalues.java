@@ -8,10 +8,10 @@ public class SwapStringvalues {
 		// TODO Auto-generated method stub
 		
     
-		//swapstring();
+		swapstring();
 		//arthematic();
 		
-		printnumber(5,200);
+		//printnumber(5,200);
 		
 	}
 	

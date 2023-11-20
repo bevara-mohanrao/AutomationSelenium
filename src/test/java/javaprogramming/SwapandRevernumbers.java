@@ -52,7 +52,7 @@ public class SwapandRevernumbers {
 	 public static void main(String[] args) {
 	
 
-	Scanner sc = new Scanner(System.in);
+/*	Scanner sc = new Scanner(System.in);
 	
 	System.out.println("Enter the number for reverse print  ");
 	
@@ -68,7 +68,7 @@ public class SwapandRevernumbers {
 	
 	}
 	
-	System.out.println("Reverse print number display "+revnum); 
+	System.out.println("Reverse print number display "+revnum);  */
 
 	// 2nd method using string builder
 	
@@ -85,10 +85,12 @@ Scanner sc1 = new Scanner(System.in);
 	StringBuilder rev = sb.reverse();
    
 	System.out.println("Reverse print number display "+rev);
+	
+	
 
 	//3rd method using string buffer
 	
-	Scanner sc3 = new Scanner(System.in);
+	/*Scanner sc3 = new Scanner(System.in);
 
 	System.out.println("Enter the number for reverse Print 3rd method ");
 	 
@@ -99,10 +101,10 @@ Scanner sc1 = new Scanner(System.in);
 	StringBuffer revnum1 =  sb1.reverse();
 	 
 		System.out.println("Enter the number for reverse Print 3rd method " +revnum1);
-
+*/
 	sc1.close();
-	sc3.close();
-    sc.close();
+	//sc3.close();
+  //  sc.close();
 	
 	
 }
