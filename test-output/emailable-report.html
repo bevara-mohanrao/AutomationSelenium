@@ -8,11 +8,27 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">28,868</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">2,517</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">SamplePackage.Secondprogram</td><td><a href="#m0">secondprogramrun</a></td><td rowspan="1">1699929016022</td><td rowspan="1">28829</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.Automationpractice.testcases.AmazonTest</td><td><a href="#m0">amazonsetup</a></td><td rowspan="1">1703544166839</td><td rowspan="1">2217</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.Automationpractice.testcases.AmazonTest</td><td><a href="#m1">postcompletion</a></td><td rowspan="1">1703544169289</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="3">com.Automationpractice.testcases.AmazonTest</td><td><a href="#m2">AmazonprimeTest</a></td><td rowspan="1">1703544169304</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">amazonsearchTest</a></td><td rowspan="1">1703544169313</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">amsazonlogin</a></td><td rowspan="1">1703544169270</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">SamplePackage.Secondprogram#secondprogramrun</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.Automationpractice.testcases.AmazonTest#amazonsetup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.Automationpractice.testcases.AmazonTest.amazonsetup(AmazonTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.Automationpractice.testcases.AmazonTest#postcompletion</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.Automationpractice.testcases.AmazonTest#AmazonprimeTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.Automationpractice.testcases.AmazonTest.AmazonprimeTest() on instance com.Automationpractice.testcases.AmazonTest@2f61d591 depends on not successfully finished methods 
+[com.Automationpractice.testcases.AmazonTest.amsazonlogin() on instance com.Automationpractice.testcases.AmazonTest@2f61d591]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.Automationpractice.testcases.AmazonTest#amazonsearchTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.Automationpractice.testcases.AmazonTest.amazonsearchTest() on instance com.Automationpractice.testcases.AmazonTest@2f61d591 depends on not successfully finished methods 
+[com.Automationpractice.testcases.AmazonTest.amsazonlogin() on instance com.Automationpractice.testcases.AmazonTest@2f61d591]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.Automationpractice.testcases.AmazonTest#amsazonlogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>https://www.amazon.com/</td><td>sbevara@uncc.edu</td><td>Roshinib1</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
+	at com.Automationpractice.testcases.AmazonTest.amazonsetup(AmazonTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

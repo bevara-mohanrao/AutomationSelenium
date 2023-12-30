@@ -1,29 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-19T13:58:00 EST" name="Suite" finished-at="2023-11-19T13:58:39 EST" duration-ms="38611">
+  <suite started-at="2023-12-29T20:03:54 EST" name="Suite" finished-at="2023-12-29T20:04:42 EST" duration-ms="48330">
     <groups>
     </groups>
-    <test started-at="2023-11-19T13:58:00 EST" name="Test" finished-at="2023-11-19T13:58:39 EST" duration-ms="38611">
-      <class name="SamplePackage.dropdownprogram">
-        <test-method signature="dropdownprograms()[pri:0, instance:SamplePackage.dropdownprogram@3c77d488]" started-at="2023-11-19T13:58:27 EST" name="dropdownprograms" finished-at="2023-11-19T13:58:39 EST" duration-ms="11525" status="PASS">
+    <test started-at="2023-12-29T20:03:54 EST" name="Test" finished-at="2023-12-29T20:04:42 EST" duration-ms="48330">
+      <class name="com.Automationpractice.testcases.RegistrationForm">
+        <test-method is-config="true" signature="PreSetup()[pri:0, instance:com.Automationpractice.testcases.RegistrationForm@38d17d80]" started-at="2023-12-29T20:03:54 EST" name="PreSetup" finished-at="2023-12-29T20:04:01 EST" duration-ms="6927" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropdownprograms -->
-      </class> <!-- SamplePackage.dropdownprogram -->
-      <class name="SamplePackage.getwindowhandles">
-        <test-method signature="getwindowhandle()[pri:0, instance:SamplePackage.getwindowhandles@38cee291]" started-at="2023-11-19T13:58:00 EST" name="getwindowhandle" finished-at="2023-11-19T13:58:12 EST" duration-ms="12377" status="PASS">
+        </test-method> <!-- PreSetup -->
+        <test-method signature="registerform(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Automationpractice.testcases.RegistrationForm@38d17d80]" started-at="2023-12-29T20:04:06 EST" name="registerform" data-provider="signupData" finished-at="2023-12-29T20:04:17 EST" duration-ms="11745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Michael]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mike.john@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Mikejohn@345]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getwindowhandle -->
-      </class> <!-- SamplePackage.getwindowhandles -->
-      <class name="SamplePackage.Dropdownautonotations">
-        <test-method signature="Dropdownautonotation()[pri:0, instance:SamplePackage.Dropdownautonotations@738dc9b]" started-at="2023-11-19T13:58:12 EST" name="Dropdownautonotation" finished-at="2023-11-19T13:58:27 EST" duration-ms="14642" status="PASS">
+        </test-method> <!-- registerform -->
+        <test-method signature="registerform(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Automationpractice.testcases.RegistrationForm@38d17d80]" started-at="2023-12-29T20:04:18 EST" name="registerform" data-provider="signupData" finished-at="2023-12-29T20:04:27 EST" duration-ms="8667" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rachael]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Williams]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[rache.williams@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[rachewill@9343]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Dropdownautonotation -->
-      </class> <!-- SamplePackage.Dropdownautonotations -->
+        </test-method> <!-- registerform -->
+        <test-method signature="registerform(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Automationpractice.testcases.RegistrationForm@38d17d80]" started-at="2023-12-29T20:04:27 EST" name="registerform" data-provider="signupData" finished-at="2023-12-29T20:04:34 EST" duration-ms="7688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sammy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wills]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sammy.wills@hotmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sammywills@3242]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerform -->
+        <test-method signature="registerform(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.Automationpractice.testcases.RegistrationForm@38d17d80]" started-at="2023-12-29T20:04:34 EST" name="registerform" data-provider="signupData" finished-at="2023-12-29T20:04:42 EST" duration-ms="7583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Rocky]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jim]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Rocky.jim@yahoo.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[rockyjim@52361]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerform -->
+        <test-method is-config="true" signature="postprocess()[pri:0, instance:com.Automationpractice.testcases.RegistrationForm@38d17d80]" started-at="2023-12-29T20:04:42 EST" name="postprocess" finished-at="2023-12-29T20:04:42 EST" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postprocess -->
+      </class> <!-- com.Automationpractice.testcases.RegistrationForm -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -2,14 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
-    <classes>
   
-     <!-- <class name="SamplePackage.Secondprogram"/> -->
-      <class name="SamplePackage.Datepicker"/>
-      <class name="SamplePackage.getwindowhandles"/>
-      <class name="SamplePackage.Dropdownautonotations"/>
-      <class name="SamplePackage.dropdownprogram"/>
- 
+  <parameter name="url" value="https://www.amazon.com/"/>
+  <parameter name="emailid" value="sbevara@uncc.edu"/>
+  <parameter name="password" value="Roshinib1"/>
+  
+    <classes>
+     <!-- <class name="com.Automationpractice.testcases.SampleTestNGtest"/> -->
+      <class name="com.Automationpractice.testcases.AmazonTest"/>
+        <class name="com.Automationpractice.testcases.RegistrationForm"/>
+          <class name="com.Automationpractice.testcases.SampleTestNGtest"/>
+          
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

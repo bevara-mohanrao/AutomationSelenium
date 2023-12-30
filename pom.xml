@@ -5,13 +5,36 @@
   <groupId>AutomationFramework</groupId>
   <artifactId>AutomationFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+ 
 <dependencies>
 	
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.15.0</version>
+</dependency>
+
+  <!-- Other dependencies -->
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.2.3</version> <!-- Use the latest version available -->
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version>
+</dependency>
+
+
+    
+<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-testng</artifactId>
+    <version>2.25.0</version>
 </dependency>
 
 <dependency>
@@ -26,6 +49,12 @@
     <version>4.15.0</version>
 </dependency>
 
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>5.3.1</version>
+    <scope>test</scope>
+</dependency>
 
 
 <dependency>
@@ -49,13 +78,28 @@
     <scope>test</scope>
 </dependency>
 
-
+ <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi</artifactId>
+        <version>5.2.0</version> <!-- Use the latest version available -->
+    </dependency>
+    <dependency>
+        <groupId>org.apache.poi</groupId>
+        <artifactId>poi-ooxml</artifactId>
+        <version>5.2.0</version> <!-- Use the latest version available -->
+    </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin -->
-
-
-
 </dependencies>
+
+
+<!-- Define the version of AspectJ -->
+<properties>
+    <aspectj.version>1.9.20.1</aspectj.version>
+</properties>
+
+<!-- Add the following options to your maven-surefire-plugin -->
+
   <build>
 	  <pluginManagement>
     <plugins>
@@ -69,16 +113,29 @@
             </configuration>
         </plugin>
 		
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.0.0-M5</version> <!-- Use the latest version -->
-            <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                </suiteXmlFiles>
-            </configuration>
-        </plugin>
+        <!-- Add the following options to your maven-surefire-plugin -->
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.1.2</version>
+    <configuration>
+        <argLine>
+            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+        </argLine>
+        <suiteXmlFiles>
+			<suiteXmlFile>testing.xml</suiteXmlFile>
+		</suiteXmlFiles>
+    </configuration>
+    <dependencies>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjweaver</artifactId>
+            <version>${aspectj.version}</version>
+        </dependency>
+    </dependencies>
+</plugin>
+        <!-- Add the following options to your maven-surefire-plugin -->
+             
     </plugins>
    </pluginManagement>
 

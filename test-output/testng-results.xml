@@ -1,17 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-13T21:30:15 EST" name="Default suite" finished-at="2023-11-13T21:30:44 EST" duration-ms="28868">
+  <suite started-at="2023-12-25T17:42:46 EST" name="Suite" finished-at="2023-12-25T17:42:49 EST" duration-ms="2517">
     <groups>
     </groups>
-    <test started-at="2023-11-13T21:30:15 EST" name="Default test" finished-at="2023-11-13T21:30:44 EST" duration-ms="28868">
-      <class name="SamplePackage.Secondprogram">
-        <test-method signature="secondprogramrun()[pri:0, instance:SamplePackage.Secondprogram@6b2ea799]" started-at="2023-11-13T21:30:16 EST" name="secondprogramrun" finished-at="2023-11-13T21:30:44 EST" duration-ms="28829" status="PASS">
+    <test started-at="2023-12-25T17:42:46 EST" name="Test" finished-at="2023-12-25T17:42:49 EST" duration-ms="2517">
+      <class name="com.Automationpractice.testcases.AmazonTest">
+        <test-method is-config="true" signature="amazonsetup()[pri:0, instance:com.Automationpractice.testcases.AmazonTest@2f61d591]" started-at="2023-12-25T17:42:46 EST" name="amazonsetup" finished-at="2023-12-25T17:42:49 EST" duration-ms="2217" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.Automationpractice.testcases.AmazonTest.amazonsetup(AmazonTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- secondprogramrun -->
-      </class> <!-- SamplePackage.Secondprogram -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- amazonsetup -->
+        <test-method signature="amsazonlogin(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:com.Automationpractice.testcases.AmazonTest@2f61d591]" started-at="2023-12-25T17:42:49 EST" name="amsazonlogin" description="Amazon login access account verification TestNG" finished-at="2023-12-25T17:42:49 EST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.amazon.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sbevara@uncc.edu]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Roshinib1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+at com.Automationpractice.testcases.AmazonTest.amazonsetup(AmazonTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amsazonlogin -->
+        <test-method is-config="true" signature="postcompletion()[pri:0, instance:com.Automationpractice.testcases.AmazonTest@2f61d591]" started-at="2023-12-25T17:42:49 EST" name="postcompletion" finished-at="2023-12-25T17:42:49 EST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postcompletion -->
+        <test-method signature="AmazonprimeTest()[pri:2, instance:com.Automationpractice.testcases.AmazonTest@2f61d591]" started-at="2023-12-25T17:42:49 EST" name="AmazonprimeTest" finished-at="2023-12-25T17:42:49 EST" depends-on-methods="com.Automationpractice.testcases.AmazonTest.amsazonlogin" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.Automationpractice.testcases.AmazonTest.AmazonprimeTest() on instance com.Automationpractice.testcases.AmazonTest@2f61d591 depends on not successfully finished methods 
+[com.Automationpractice.testcases.AmazonTest.amsazonlogin() on instance com.Automationpractice.testcases.AmazonTest@2f61d591]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.Automationpractice.testcases.AmazonTest.AmazonprimeTest() on instance com.Automationpractice.testcases.AmazonTest@2f61d591 depends on not successfully finished methods 
+[com.Automationpractice.testcases.AmazonTest.amsazonlogin() on instance com.Automationpractice.testcases.AmazonTest@2f61d591]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AmazonprimeTest -->
+        <test-method signature="amazonsearchTest()[pri:3, instance:com.Automationpractice.testcases.AmazonTest@2f61d591]" started-at="2023-12-25T17:42:49 EST" name="amazonsearchTest" finished-at="2023-12-25T17:42:49 EST" depends-on-methods="com.Automationpractice.testcases.AmazonTest.amsazonlogin" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.Automationpractice.testcases.AmazonTest.amazonsearchTest() on instance com.Automationpractice.testcases.AmazonTest@2f61d591 depends on not successfully finished methods 
+[com.Automationpractice.testcases.AmazonTest.amsazonlogin() on instance com.Automationpractice.testcases.AmazonTest@2f61d591]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.Automationpractice.testcases.AmazonTest.amazonsearchTest() on instance com.Automationpractice.testcases.AmazonTest@2f61d591 depends on not successfully finished methods 
+[com.Automationpractice.testcases.AmazonTest.amsazonlogin() on instance com.Automationpractice.testcases.AmazonTest@2f61d591]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonsearchTest -->
+      </class> <!-- com.Automationpractice.testcases.AmazonTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
